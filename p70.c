@@ -3,27 +3,35 @@ int main()
 {
 
     int samsung,realme,redmi,oppo,vivo,a,b;
+    samsung=60000;
+    realme=80000;
+    redmi=15000;
+    oppo= 40000;
+    vivo=25000;
     printf("input 2 values for budget range\n");
     scanf("%d%d",&a,&b);
-    if((a>=10000)&&(b<20000))
+    if((samsung>=a)&&(samsung<=b))
     {
-        printf("the brands available are redmi\n");
+        printf("the brands available are samsung\n");
     }
-    else if((a>=20000)&&(b<30000))
+    if((realme>=a)&&(realme<=b))
     {
-        printf("the brands available are vivo\n");
+
+        printf("the brands available are realme\n");
     }
-    else if((a>=30000)&&(b<=50000))
-            {
-                printf("the brands are avialbe are , oppo\n");
-            }
-            else if((a>50000)&&(b<=70000))
+    if((redmi>=a)&&(redmi<=b))
+    {
+    printf("the brands are avialbe are redmi\n");
+    }
+    if((oppo>=a)&&(oppo<=b))
                 {
-                    printf("the available brands are samsung\n");
+                    printf("the available brands are oppo\n");
                 }
-                else if((a>70000)&&(b<=100000))
+    if((vivo>=a)&&(vivo<=b))
                 {
-                    printf("the available brands are realme\n");
+                    printf("the available brands are vivo\n");
                 }
                 return 0;
+
+
 }
