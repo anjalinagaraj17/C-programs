@@ -14,7 +14,7 @@ int main()
     scanf("%f",&unit);
     if(unit<83.33)
     {
-        printf("the minimum bill should be 100/-");
+        printf("the minimum bill is 100/-");
     }
 
     else if((unit>=83.33)&&(unit<=199))
@@ -24,17 +24,17 @@ int main()
     }
     else if((unit>=200 && unit<400))
     {
-        bill=unit*1.5;
+        bill=238.8+(((unit-199)*1.5));
         printf("the bill is %f\n",bill);
     }
     else if((unit>=400 && unit<600))
     {
-    bill=unit*1.8;
+    bill=538.8+(((unit-399)*1.8));
     printf("the bill is %f\n",bill);
     }
     else if(unit>=600)
     {
-        bill=unit*2;
+        bill=898.8+(((unit-599)*2.0));
         printf("the bill is %f\n",bill);
 
     }
